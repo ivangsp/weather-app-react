@@ -1,2 +1,4 @@
-export const SEARCHING_STARTED = 'SEARCHING_STARTED';
-export const GET_RESULTS = 'GET_RESULTS';
+export const FLIGHT_MODE = 'FLIGHT_MODE';
+export const FETCH_PLACES = 'FETCH_PLACES';
+export const ERROR_OCCURRED = 'ERROR_OCCURED';
+export const FETCH_WEATHER = 'FETCH_WEATHER';

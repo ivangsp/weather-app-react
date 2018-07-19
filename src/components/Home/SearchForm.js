@@ -28,10 +28,10 @@ class SearchForm extends Component {
 		this.setState({
 			address: val
 		});
-		let addressId = this.props.results.filter((obj) => {
+		let address = this.props.places.filter((obj) => {
 			return obj.title === val;
 		});
-    console.log('>>', addressId[0].woeid);
+		this.props.fetchWeather(address[0].woeid);
   }
 
 	renderItem(item, isHighlighted) {
@@ -48,21 +48,22 @@ class SearchForm extends Component {
 
 	render() {
 		return (
-				<div>
-					 <Autocomplete
-               getItemValue={this.getItemValue}
-							 items={this.props.results}
-							 renderItem={this.renderItem}
-							 value={this.state.address}
-							 onChange={this.handleChange}
-							 onSelect={this.onSelect}
-					 />
+				<div className="">
+					<Autocomplete
+							getItemValue={this.getItemValue}
+							items={this.props.places}
+							renderItem={this.renderItem}
+							value={this.state.address}
+							onChange={this.handleChange}
+							onSelect={this.onSelect}
+					/>
 				</div>
 		);
 	}
 }
 SearchForm.propTypes = {
   search: PropTypes.func.isRequired,
-  results: PropTypes.array.isRequired
+	places: PropTypes.array.isRequired,
+	fetchWeather: PropTypes.func.isRequired
 };
 export default SearchForm;

@@ -1,0 +1,55 @@
+body {
+    font-family: sans-serif;
+    background: url("../icons/background-img.jpg");
+    background-size: 100%;
+    /*justify-content: center;*/
+    height: 100%;
+    width: 100%;
+    vertical-align: center;
+
+
+
+}
+.container {
+    background-color: white;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 600px;
+}
+
+input {
+    width: 600px;
+    height: 60px;
+    border: 1px;
+    margin-bottom: 0px;
+    background: url("../icons/ic-pin.svg");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    border-bottom: 3px solid gray;
+    outline: none;
+    padding-left: 50px;
+    padding-bottom: 0px;
+
+}
+
+table {
+    border-collapse:collapse
+}
+tr {
+    border: 0px;
+}
+td {
+    border: 0px;
+}
+
+.search-form {
+
+}
+
+.autoSearch {
+
+}
+
+.table {
+}

@@ -5,11 +5,18 @@ import axios from 'axios';
 const ROOT_URL = 'http://internship-proxy.aw.ee:3001';
 
 export const searchWeather = (place) => (dispatch) => {
-	dispatch({type: type.SEARCHING_STARTED});
-	axios.get(ROOT_URL + '/location?query=new')
+	axios.get(ROOT_URL + '/location?query=' + place)
 			.then((response) => {
-				console.log('response', response.data);
-				dispatch({type: type.GET_RESULTS, payload: response.data});
+				dispatch({type: type.FETCH_PLACES, payload: response.data});
 			})
-			.catch((error) => console.log('error occured'));
+			.catch((error) => dispatch({type: type.ERROR_OCCURRED, payload: error}));
+};
+
+export const fetchWeather = (woeid) => (dispatch) => {
+	dispatch({type: type.FLIGHT_MODE});
+	axios.get(ROOT_URL + '/location/' + woeid)
+			.then((response) => {
+				dispatch({type: type.FETCH_WEATHER, payload: response.data});
+			})
+			.catch((error) => dispatch({type: type.ERROR_OCCURRED, payload: error}));
 };
