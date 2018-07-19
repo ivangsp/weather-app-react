@@ -30,8 +30,56 @@ input {
     outline: none;
     padding-left: 50px;
     padding-bottom: 0px;
+    font-size: x-large;
+
 
 }
+.icon-weather-state {
+    height: auto;
+    width: 50px;
+}
+.icon-arrow-S {
+    transform: rotate(0deg);
+    width: 40px;
+    height: auto;
+}
+.icon-arrow-N {
+    transform: rotate(180deg);
+    width: 15px;
+    height: auto;
+}
+
+.icon-arrow-W {
+    transform: rotate(90deg);
+    width: 15px;
+    height: auto;
+}
+.icon-arrow-E {
+    transform: rotate(270deg);
+    width: 15px;
+    height: auto;
+}
+.icon-arrow-NE {
+    transform: rotate(225deg);
+    width: 15px;
+    height: auto;
+}
+.icon-arrow-NW {
+    transform: rotate(135deg);
+    width: 15px;
+    height: auto;
+}
+.icon-arrow-SE {
+    transform: rotate(315deg);
+    width: 15px;
+    height: auto;
+}
+.icon-arrow-SW {
+    transform: rotate(45deg);
+    width: 15px;
+    height: auto;
+}
+
 
 table {
     border-collapse:collapse
@@ -41,6 +89,12 @@ tr {
 }
 td {
     border: 0px;
+}
+.date {
+    color: #6AACDE;
+    font-size: x-large;
+    font-weight: bold;
+
 }
 
 .search-form {
