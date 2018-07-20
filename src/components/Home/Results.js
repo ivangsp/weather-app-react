@@ -5,25 +5,14 @@ import arrow from '../../static/icons/windarrow.svg';
 
 const Results = (props) => {
 	let weather;
-
-	let rendeDirectionArrow = (windDirection) => {
-		switch (windDirection) {
-			case 'NE':
-				return 'icon-arrow-north-east';
-				case 'NW':
-				return 'icon-arrow-north-west';
-				case 'SE':
-				return 'icon-arrow-south-east';
-				case 'SW':
-				return 'icon-arrow-south-west';
-				case 'EE':
-				return 'icon-arrow-east';
-				case 'WW':
-				return 'icon-arrow-north-east';
-			default:
-				return 'icon-arrow-north';
-		}
-	};
+	if (props.flightMode) {
+		return (
+				<div>
+					<i className="fa fa-refresh fa-spin fa-3x fa-fw" aria-hidden="true" />
+					<p>Loading...........</p>
+				</div>
+		);
+	}
 
 	if (props.results !== null && props.results !== undefined) {
 		weather = props.results.consolidated_weather;
@@ -102,7 +91,8 @@ const Results = (props) => {
 };
 
 Results.propTypes = {
-	results: PropTypes.object
+	results: PropTypes.object,
+	flightMode: PropTypes.bool.isRequired
 };
 
 export default Results;

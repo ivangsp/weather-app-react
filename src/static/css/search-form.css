@@ -1,0 +1,52 @@
+input {
+    width: 600px;
+    height: 60px;
+    border: 1px;
+    margin-bottom: 0px;
+    background: url("../icons/ic-pin.svg");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    border-bottom: 3px solid goldenrod;
+    outline: none;
+    padding-left: 50px;
+    padding-bottom: 0px;
+    font-size: x-large;
+
+}
+
+
+/** ----------- Non-Retina Screens ----------- *!*/
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (min-resolution: 192dpi) {
+
+}
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+
+
+}
+
+
+@media	screen and (min-device-width: 480px) and (max-device-width: 840px) {
+
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+    input {
+        width: 300px;
+
+    }
+}
+

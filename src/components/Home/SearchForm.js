@@ -36,7 +36,7 @@ class SearchForm extends Component {
 
 	renderItem(item, isHighlighted) {
 		return (
-				<div style={{background: isHighlighted ? 'lightgray' : 'white'}} key={item.woeid}>
+				<div className="dropdown" style={{background: isHighlighted ? 'goldenrod' : 'white'}} key={item.woeid}>
 					{item.title}
 				</div>
 		);
