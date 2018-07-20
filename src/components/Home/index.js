@@ -37,7 +37,7 @@ Index.propTypes = {
 	places: PropTypes.array.isRequired,
 	results: PropTypes.object,
 	fetchWeather: PropTypes.func.isRequired,
-	flightMode: PropTypes.bool.isRequired
+	flightMode: PropTypes.bool
    };
 
 export default Index;

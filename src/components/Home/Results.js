@@ -18,6 +18,7 @@ const Results = (props) => {
 		weather = props.results.consolidated_weather;
 		return (
 				<table className="table">
+					<tbody>
 					<tr className="date">
 						<td >Today</td>
 						<td>Tomorrow</td>
@@ -26,20 +27,20 @@ const Results = (props) => {
 					<tr>
 						<td>
 							<img className="icon-weather-state"
-									src={'https://www.metaweather.com/static/img/weather/' +
-									weather[0].weather_state_abbr + '.svg'} />
+									 src={'https://www.metaweather.com/static/img/weather/' +
+									 weather[0].weather_state_abbr + '.svg'} />
 							<span className="pl-2">{weather[0].weather_state_name}</span>
 						</td>
 						<td>
 							<img className="icon-weather-state"
-									src={'https://www.metaweather.com/static/img/weather/' +
-									weather[1].weather_state_abbr + '.svg'} />
+									 src={'https://www.metaweather.com/static/img/weather/' +
+									 weather[1].weather_state_abbr + '.svg'} />
 							<span className="pl-2">{weather[1].weather_state_name}</span>
 						</td>
 						<td>
 							<img className="icon-weather-state"
-									src={'https://www.metaweather.com/static/img/weather/' +
-									weather[2].weather_state_abbr + '.svg'} />
+									 src={'https://www.metaweather.com/static/img/weather/' +
+									 weather[2].weather_state_abbr + '.svg'} />
 							<span className="pl-2">{weather[2].weather_state_name}</span>
 						</td>
 					</tr>
@@ -84,6 +85,7 @@ const Results = (props) => {
 							<span className="ml-3">{Math.round(weather[2].wind_speed)}mph</span>
 						</td>
 					</tr>
+					</tbody>
 				</table>
 		);
 	} else {
@@ -93,7 +95,7 @@ const Results = (props) => {
 
 Results.propTypes = {
 	results: PropTypes.object,
-	flightMode: PropTypes.bool.isRequired
+	flightMode: PropTypes.bool
 };
 
 export default Results;

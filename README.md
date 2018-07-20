@@ -1,3 +1,8 @@
+## How to Run
+1. install all the dependecies by running ```npm install ``` or ``` yarn install ```
+2. start the project by running ```npm start``` **the app runs on port 3000**
+3. To run the tests ```npm test```
+
 # TEST ASSIGNMENT FOR FRONT-END INTERNSHIP IN MOONCASCADE
 #### SUMMER 2018
 
