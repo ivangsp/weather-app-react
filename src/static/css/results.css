@@ -65,6 +65,12 @@ td {
     color: #6AACDE;
     font-size: x-large;
     font-weight: bold;
+}
+tr {
+    border: 3px transparent solid;
+}
+.spin {
+    color: green;
 
 }
 

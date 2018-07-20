@@ -7,7 +7,7 @@ const Results = (props) => {
 	let weather;
 	if (props.flightMode) {
 		return (
-				<div>
+				<div className="spin pl-5">
 					<i className="fa fa-refresh fa-spin fa-3x fa-fw" aria-hidden="true" />
 					<p>Loading...........</p>
 				</div>
@@ -45,13 +45,13 @@ const Results = (props) => {
 					</tr>
 					<tr>
 						<td>Max:
-							<span className="pl-2">{Math.round(weather[0].max_temp)}<sup>o</sup>C </span>
+							<span className="pl-2">{Math.round(weather[0].max_temp)}<sup>o</sup>C</span>
 						</td>
 						<td>Max:
-							<span className="pl-2">{Math.round(weather[1].max_temp)}<sup>o</sup>C </span>
+							<span className="pl-2">{Math.round(weather[1].max_temp)}<sup>o</sup>C</span>
 						</td>
 						<td>Max:
-							<span className="pl-2">{Math.round(weather[2].max_temp)}<sup>o</sup>C </span>
+							<span className="pl-2 ">{Math.round(weather[2].max_temp)}<sup>o</sup>C</span>
 						</td>
 
 					</tr>
@@ -64,7 +64,8 @@ const Results = (props) => {
 						</td>
 						<td>Min:
 							<span className="pl-2">{Math.round(weather[2].min_temp)}<sup>o</sup>C</span>
-						</td>					</tr>
+						</td>
+					</tr>
 
 					<tr>
 						<td>

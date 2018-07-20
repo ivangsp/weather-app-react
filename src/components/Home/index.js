@@ -9,7 +9,7 @@ const Index = (props) => {
     return (
         <div className="container-fluid">
 					<NavBar />
-					<div className = "container align-middle">
+					<div className = "container">
 						<div className="row">
 							<div className="col-12">
 								<div className="row">
@@ -20,7 +20,7 @@ const Index = (props) => {
 									/>
 								</div>
 								<div className="row">
-									<div className="col-12">
+									<div className="col-xsm-12">
 										<Results results={props.results} flightMode={props.flightMode} />
 									</div>
 								</div>
