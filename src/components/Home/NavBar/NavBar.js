@@ -1,6 +1,6 @@
 /* eslint-disable no-tabs */
 import React from 'react';
-import logo from '../../static/icons/mc-logo.png';
+import logo from '../../../static/icons/mc-logo.png';
 
 const NavBar = () => {
 	return (

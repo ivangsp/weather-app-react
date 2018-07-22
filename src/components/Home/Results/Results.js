@@ -1,7 +1,7 @@
 /* eslint-disable no-tabs,no-mixed-spaces-and-tabs */
 import React from 'react';
 import PropTypes from 'prop-types';
-import arrow from '../../static/icons/windarrow.svg';
+import arrow from '../../../static/icons/windarrow.svg';
 
 const Results = (props) => {
 	let weather;
